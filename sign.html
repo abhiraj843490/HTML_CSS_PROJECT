@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>signup page</title>
+    <link rel="stylesheet" type="text/css" href="sign.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+
+    <style>
+         ::placeholder {
+            color: rgb(181, 166, 166);
+            opacity: 1;
+            /* Firefox */
+        }
+        
+         :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: rgb(181, 166, 166);
+        }
+        
+         ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: rgb(181, 166, 166);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Section_top">
+        <div class="content">
+            <form class="box" method="post" onsubmit="return validating()">
+                <center style="padding-bottom: 20px;">
+                    <h2>SignUp Career_Launcher</h2>
+                </center>
+                <span id="na"></span>
+                <div class="col">
+
+                    <label for="uname"><b>username</b></label>
+                    <input type="text" id="name" placeholder="username">
+
+                    <label for="mail"><b>Gmail</b></label>
+                    <input type="text" id="mails" placeholder="email">
+
+
+                    <label for="contact"><b>Contact Number</b></label>
+                    <input type="text" id="con" placeholder="contact">
+
+
+                    <label for="pass"><b>Password</b></label>
+                    <input type="text" id="pas1" placeholder="password">
+
+
+                    <label for="cpass"><b>confirm password</b></label>
+                    <input type="password" id="pas2" placeholder="confirm password">
+
+
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function validating() {
+            var un = document.getElementById('name').value;
+            var m = document.getElementById('mails').value;
+            var c = document.getElementById('con').value;
+            var password = document.getElementById('pas1').value;
+            var conpass = document.getElementById('pas2').value;
+
+            if (un == "") {
+                document.getElementById("na").innerHTML = "please enter valid name"
+                return false;
+            }
+            if (m == "") {
+                document.getElementById("na").innerHTML = "please enter valid mail"
+                return false;
+            }
+            if (c == "") {
+                document.getElementById("na").innerHTML = "please enter valid number"
+                return false;
+            }
+            if (password == "") {
+                document.getElementById("na").innerHTML = "please enter valid password"
+                return false;
+            }
+            if (conpass == "") {
+                document.getElementById("na").innerHTML = "please enter valid password1"
+                return false;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

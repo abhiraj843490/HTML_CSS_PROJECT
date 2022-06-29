@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="product.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <h1>
+        <!--            <img src="images.png" alt="ADC" />-->
+    </h1>
+    <div class="container">
+        <h2>
+            <marquee direction="right" height="60%" scrollamount="12">Predict your better Career with better launch, Success gain with Career Launcher launches for your future prediction, launches you in best way Gives you a guarantee for your better prediction</marquee>
+        </h2>
+    </div>
+    <table id="container">
+        <td>
+            <a href="home.html" <i style="font-size:20px" class="fa">&#xf015;</i> <b>home</b></a>
+        </td>
+        <td>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>DCA</h1>
+                    <ul>
+                        <li>Computer Fundamentals and Windows</li>
+                        <li>Representation of data/Information concepts of data processing</li>
+                        <li>Introduction to Windows</li>
+                        <li>Windows Setting</li>
+                        <li>Window/Accessories</li>
+                        <li>Computer Fundamentals and Windows</li>
+                        <li>Representation of data/Information concepts of data processing</li>
+                        <li>Introduction to Windows</li>
+                        <li>Windows Setting</li>
+                        <li>Window/Accessories</li>
+                        <li>Computer Fundamentals and Windows</li>
+                        <li>Representation of data/Information concepts of data processing</li>
+                        <li>Introduction to Windows</li>
+                        <li>Windows Setting</li>
+                        <li>Window/Accessories</li>
+                    </ul>
+                </div>
+            </div>
+            <a onclick="togglePopup()" href="#">
+                <img src="img\\about.png"><b>courses</b></a>
+        </td>
+
+        <td>
+            <div class="popup1" id="popup-2">
+                <div class="overlay1"></div>
+                <div class="content1">
+                    <div class="close-btn1" onclick="togglePopup1()">&times;</div>
+                    <center>
+                        <h1>Guidance</h1>
+                    </center>
+                    <ul>
+                        <li>
+                            <h3>Guided by:</h3> <b>Abhiraj Verma, Dharmendra Kumar, Randhir Singh</b></li>
+                        <li>
+                            <h3>Qualification</h3>
+                            <li>Abhiraj Verma: Batchlor of Engineering(Computer)</li>
+                            <li>Dharmendra kumar: B-ed</li>
+                            <li>Randhir Singh: Greduated</li>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <a onclick="togglePopup1()" href="#">
+                <img src="img\\guide.png"><b>guide</b></a>
+        </td>
+
+
+    </table>
+</body>
+<script>
+    function togglePopup() {
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+
+    function togglePopup1() {
+        document.getElementById("popup-2").classList.toggle("active");
+    }
+</script>
+
+</html>

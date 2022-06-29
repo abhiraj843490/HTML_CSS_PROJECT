@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <script type="text/javascript">
+        function valid() {
+            var mail = document.getElementById("mail").value;
+            var pass = document.getElementById("pass").value;
+            if (mail == null || mail == "") {
+                alert("mail can't be blank");
+                return false;
+            } else if (pass.length < 6) {
+                alert("password must be at least of 6 charcters");
+                return false;
+            }
+        }
+
+        function showclk() {
+            var x = document.getElementById("mail").value;
+            alert(x + " successfully login");
+        }
+    </script>
+    <div class="container1">
+        <nav>
+            <ul>
+                <li><a href="home.html"><b>Home</b></a></li>
+                <li><a href="#"><b>product</b></a></li>
+                <li><a href="#about"><b>Contact</b></a></li>
+                <li style="float: left;"><a href="#about"><b>About</b></a></li>
+                <li style="float: right;"><a href="login.html"><b>login</b></a></li>
+                <li style="float: right;"><a href="Singup.html"><b>singup</b></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form">
+        <form class="box" action="login.html" method="post" onsubmit="return valid()">
+            <h1>Signin Career_Launcher</h1>
+            <div class="col">
+                <label for="mail"><b>Enter Gmail</b></label>
+                <input type="mail" id="mail" placeholder="abx@gmail.com">
+
+                <label for="pass"><b>Enter Password</b></label>
+                <input type="password" id="pass" placeholder="123@xyz">
+
+                <button type="submit" onclick="showclk()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer id="about">
+        <p>contact me: @abhi<br>
+            <a href="mailto:abhiraj20abc@gmail.com">abhiraj20abc@gmail.com</a><br> Contact Number: 8434904553</p>
+    </footer>
+
+</body>
+
+</html>
